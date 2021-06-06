@@ -149,6 +149,9 @@ if s:path =~# '/test\%(/\|/.*/\)test_[^\/]*\.rb$\|/test/.*_test\.rb$\|/features/
   syn keyword rubyAssertion assert_nothing_raised assert_not_send assert_nothing_thrown
   syn keyword rubyAssertion assert_raise assert_block assert_mock assert_output assert_raise_with_message assert_silent
   syn keyword rubyAssertion flunk
+  syn keyword rubyTestMacro before after around background setup teardown
+  syn keyword rubyTestMacro context describe feature
+  syn keyword rubyTestMacro it example specify scenario 
 endif
 
 if s:path =~# '/spec/.*_spec\.rb$'
